@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./Card.jsx";
 import styles from "./Characters.module.css";
+import Filters from "./Filters.jsx";
 
 export default function Characters() {
   const [data, setData] = useState(null);
