@@ -26,7 +26,22 @@ export default function BasicModal({ character }) {
 
   return (
     <div>
-      <Button onClick={handleOpen}> {character.name} </Button>
+      <Button
+        onClick={handleOpen}
+        color="inherit"
+        sx={{
+          color: "white",
+          "&:hover": {
+            backgroundColor: "transparent",
+            color: "white",
+          },
+          "&:focus": { outline: "none" },
+          "&:focus-visible": { outline: "none" },
+        }}
+      >
+        {" "}
+        {character.name}{" "}
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}
